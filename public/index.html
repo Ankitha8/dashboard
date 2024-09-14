@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<form class="grid">
+  <input type="text" id="widgetName" name="widgetName" placeholder="Enter Widget Name" aria-label="Widget Name" required />
+  <textarea id="widgetContent" name="widgetContent" placeholder="Enter Widget Content" aria-label="Widget Content" required></textarea>
+  <button type="submit">Add Widget</button>
+</form>
+<nav class="container-fluid">
+  <!-- Navigation links can go here -->
+</nav>
+<div class="container">
+  <h1>Dynamic Dashboard</h1>
+  
+  <!-- Widget Form for adding new widgets -->
+  <div class="widget-form">
+    <input type="text" id="widgetName" placeholder="Enter Widget Name" />
+    <input type="text" id="widgetContent" placeholder="Enter Widget Content" />
+    <button id="addWidgetBtn">Add Widget</button>
+  </div>
+  <div id="categories"></div>
+<main class="container">
+  <div class="grid">
+      <!-- Widgets will appear here -->
+      <section class="widget">
+          <h2>Widget 1</h2>
+          <p>Random text for widget 1</p>
+          <button class="remove">Remove</button>
+      </section>
+      <section class="widget">
+          <h2>Widget 2</h2>
+          <p>Random text for widget 2</p>
+          <button class="remove">Remove</button>
+      </section>
+  </div>
+</main>
+
+<section aria-label="Add Widget">
+  <div class="container">
+      <h2>Add a New Widget</h2>
+      <form class="grid">
+          <input type="text" id="widgetName" placeholder="Widget Name" required />
+          <textarea id="widgetContent" placeholder="Widget Content" required></textarea>
+          <button type="submit">Add Widget</button>
+      </form>
+  </div>
+</section>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="scripts.js"></script>
+    <!-- The React app will be injected here -->
+  </body>
+</html>
